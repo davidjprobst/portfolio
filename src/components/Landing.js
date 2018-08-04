@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Resume extends Component {
+class Landing extends Component {
   render() {
     return (
-      <h1>This is the Resume component.</h1>
+      <h1>This is the Landing component.</h1>
     );
   }
 }
 
-export default Resume;
+export default Landing;
