@@ -11,20 +11,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <aside>
-          <nav>
-            <Link to ='/about' className="link">About</Link>
-            <Link to ='/' className="link">Projects</Link>
-            <Link to ='/resume' className="link">Resume</Link>
-            <Link to ='/contact' className="link">Contact</Link>
-          </nav>
-        </aside>
-        <main>
-          <Route exact path="/" component={Landing} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/contact" component={Contact} />
-        </main>
+        <div id="container">
+          <aside>
+            <nav>
+              <Link to ='/about' className="link">About</Link>
+              <Link to ='/' className="link">Projects</Link>
+              <Link to ='/resume' className="link">Resume</Link>
+              <Link to ='/contact' className="link">Contact</Link>
+            </nav>
+          </aside>
+          <main>
+            <Route exact path="/" component={Landing} />
+            <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/contact" component={Contact} />
+          </main>
+        </div>
       </div>
     );
   }
