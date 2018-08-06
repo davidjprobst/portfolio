@@ -1,5 +1,25 @@
 html {
   height: 100%;
+  list-style: none;
+  color: #101010;
+}
+
+a {
+  text-decoration: none;
+  color: #101010;
+}
+
+p {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 41px;
+  font-weight: 700px;
+  margin: 0 0 16px 0;
 }
 
 body {
@@ -41,7 +61,31 @@ main {
   margin: 48px 0 0 0;
 }
 
-.project-cover-image {
+.project-preview {
   max-width: 100%;
+  text-align: left;
+  margin: 0 0 48px 0;
+}
+
+.project-cover-image {
   overflow: hidden;
+  margin: 0 0 8px 0;
+  height: 375px;
+}
+
+.project-skills-list {
+  margin: 0 0 16px 0;
+}
+
+.project-skill {
+  display: inline-block;
+  padding: 2px 4px;
+  margin: 0 8px 0 0;
+  background-color: #EAEAEA;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
 }
