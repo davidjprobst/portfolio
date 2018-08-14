@@ -1,9 +1,104 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html {
+  height: 100%;
+  list-style: none;
+  color: #101010;
 }
 
-.link {
-  color: #000000;
+a {
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+  color: #101010;
+}
+
+p {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 41px;
+  font-weight: 700px;
+  margin: 0 0 16px 0;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 960px;
+  display: flex;  /*enables flex content for its children*/
+  margin: auto;
+}
+
+aside {
+  order: 2;
+  min-width: 232px;
+  margin: 48px 0 0 24px;
+}
+
+nav {
+  position: fixed;
+  width: 232px;
+  height: 325px;
+}
+
+nav > a {
+  display: block;
+  font-size: 20px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin: 12px 0;
+  width: 100%;
+}
+
+.prof-pic {
+  height: 96px;
+  width: 96px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 24px 0 32px 0;
+}
+
+main {
+  order: 1;
+  overflow-y: auto;
+  margin: 48px 0 0 0;
+}
+
+.project-preview {
+  max-width: 100%;
+  text-align: left;
+  margin: 0 0 48px 0;
+}
+
+.project-cover-image {
+  overflow: hidden;
+  margin: 0 0 8px 0;
+  height: 375px;
+  width: 100%;
+}
+
+.project-skills-list {
+  margin: 0 0 16px 0;
+}
+
+.project-skill {
+  display: inline-block;
+  padding: 2px 4px;
+  margin: 0 8px 0 0;
+  background-color: #EAEAEA;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
 }
