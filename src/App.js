@@ -14,6 +14,7 @@ class App extends Component {
         <div id="container">
           <aside>
             <nav>
+              <img class="prof-pic" src='/assets/images/prof-pic.png' />
               <Link to ='/about' className="link">About</Link>
               <Link to ='/' className="link">Projects</Link>
               <Link to ='/resume' className="link">Resume</Link>

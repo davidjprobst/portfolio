@@ -5,6 +5,7 @@ html {
 }
 
 a {
+  font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   color: #101010;
 }
@@ -30,7 +31,7 @@ body {
 }
 
 #container {
-  max-width: 1080px;
+  max-width: 960px;
   display: flex;  /*enables flex content for its children*/
   margin: auto;
 }
@@ -44,15 +45,26 @@ aside {
 nav {
   position: fixed;
   width: 232px;
+  height: 325px;
 }
 
 nav > a {
   display: block;
+  font-size: 20px;
   height: 28px;
   line-height: 28px;
   text-align: center;
-  margin: 6px 0;
+  margin: 12px 0;
   width: 100%;
+}
+
+.prof-pic {
+  height: 96px;
+  width: 96px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 24px 0 32px 0;
 }
 
 main {
@@ -71,6 +83,7 @@ main {
   overflow: hidden;
   margin: 0 0 8px 0;
   height: 375px;
+  width: 100%;
 }
 
 .project-skills-list {
