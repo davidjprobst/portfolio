@@ -8,13 +8,18 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 class App extends Component {
+
+  setActiveView() {
+    console.log("active view set");
+  }
+
   render() {
     return (
       <div className="App">
         <div id="container">
           <aside>
             <nav>
-              <img class="prof-pic" src='/assets/images/prof-pic.png' />
+              <img className="prof-pic" src='/assets/images/prof-pic.png' />
               <Link to ='/about' className="link">About</Link>
               <Link to ='/' className="link">Projects</Link>
               <Link to ='/resume' className="link">Resume</Link>

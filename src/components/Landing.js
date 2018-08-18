@@ -13,12 +13,12 @@ class Landing extends Component {
       <section className="projects">
         {
           this.state.projects.map( (project,index)  =>
-          <div className="project-preview">
+          <div className="project-preview" key={index}>
             <img className="project-cover-image" src={project.coverImage} alt={project.title} />
             <h1>{project.title}</h1>
             <li className="project-skills-list">
               {project.skills.map( (skill,index) =>
-                <ul className="project-skill">{skill}</ul>
+                <ul className="project-skill" key={index}>{skill}</ul>
               )}
             </li>
             <p>{project.intro}</p>
