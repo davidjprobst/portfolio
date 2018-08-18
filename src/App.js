@@ -8,9 +8,24 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
 
-  setActiveView() {
-    console.log("active view set");
+    this.state = {
+      currentView: "projects"
+    }
+  }
+
+  makeActive(clickedItem, currentView) {
+    console.log("changing the color of " + this.state.currentView);
+    console.log(clickedItem.target);
+    clickedItem.target.add("active");
+  }
+
+  setCurrentView(e) {
+    var clickedValue = e.target.innerHTML.toLowerCase();
+    this.setState({ currentView: clickedValue });
+    this.makeActive(e, clickedValue)
   }
 
   render() {
@@ -20,10 +35,10 @@ class App extends Component {
           <aside>
             <nav>
               <img className="prof-pic" src='/assets/images/prof-pic.png' />
-              <Link to ='/about' className="link">About</Link>
-              <Link to ='/' className="link">Projects</Link>
-              <Link to ='/resume' className="link">Resume</Link>
-              <Link to ='/contact' className="link">Contact</Link>
+              <Link to ='/about' className="link" onClick = { (e) => this.setCurrentView(e) }>About</Link>
+              <Link to ='/' className="link" onClick = { (e) => this.setCurrentView(e) }>Projects</Link>
+              <Link to ='/resume' className="link" onClick = { (e) => this.setCurrentView(e) }>Resume</Link>
+              <Link to ='/contact' className="link" onClick = { (e) => this.setCurrentView(e) }>Contact</Link>
             </nav>
           </aside>
           <main>
