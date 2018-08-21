@@ -58,7 +58,7 @@ nav > a {
   width: 100%;
 }
 
-.active {
+.active-link {
   background-color: #002FE9;
   color: #ffffff;
 }
