@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
+import Nav from './components/Nav';
 import Landing from './components/Landing';
 import About from './components/About';
-import Project from './components/Project';
+// // import Project from './components/Project';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
         <div id="container">
           <aside>
-            <nav>
-              <img class="prof-pic" src='/assets/images/prof-pic.png' />
-              <Link to ='/about' className="link">About</Link>
-              <Link to ='/' className="link">Projects</Link>
-              <Link to ='/resume' className="link">Resume</Link>
-              <Link to ='/contact' className="link">Contact</Link>
-            </nav>
+            <Nav />
           </aside>
           <main>
             <Route exact path="/" component={Landing} />

@@ -40,22 +40,30 @@ aside {
   order: 2;
   min-width: 232px;
   margin: 48px 0 0 24px;
+  overflow: hidden;
 }
 
 nav {
   position: fixed;
   width: 232px;
   height: 325px;
+  overflow: auto;
+  height: 100%;
 }
 
 nav > a {
   display: block;
   font-size: 20px;
-  height: 28px;
-  line-height: 28px;
+  height: 44px;
+  line-height: 44px;
   text-align: center;
-  margin: 12px 0;
+  margin: 0;
   width: 100%;
+}
+
+.active-link {
+  background-color: #002FE9;
+  color: #ffffff;
 }
 
 .prof-pic {
