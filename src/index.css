@@ -49,6 +49,7 @@ nav {
   height: 325px;
   overflow: auto;
   height: 100%;
+  float: right;
 }
 
 nav > a {
@@ -79,6 +80,7 @@ main {
   order: 1;
   overflow-y: auto;
   margin: 48px 0 0 0;
+  width: 100%;
 }
 
 .project-preview {
@@ -109,4 +111,8 @@ main {
   text-align: center;
   border-radius: 2px;
   font-size: 14px;
+}
+
+.about {
+  text-align: left;
 }
