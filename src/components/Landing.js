@@ -10,7 +10,7 @@ class Landing extends Component {
 
   render() {
     return (
-      <section className="projects">
+      <section id="projects">
         {
           this.state.projects.map( (project,index)  =>
           <div className="project-preview" key={index}>
