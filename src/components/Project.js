@@ -18,14 +18,14 @@ class Project extends Component {
       <section id="projects">
         <h1>This is the Project component.</h1>
         <p>{this.state.project.title}</p>
-        <p>{
+        <li>{
             this.state.project.info.map( (info,index) =>
-            <div className="project-section">
+            <div className="project-section" key={index}>
               <img className="project-image" src={info.image} alt={info.alt} />
               <p>{info.body}</p>
             </div>
             )
-        }</p>
+        }</li>
       </section>
     );
   }
