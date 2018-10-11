@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import projectData from './../data/projects';
 
 class Project extends Component {
   constructor(props) {
     super(props);
 
-    const project = project.find( project => {
+    const project = projectData.find( project => {
       return project.slug === this.props.match.params.slug
     });
 
@@ -15,8 +16,22 @@ class Project extends Component {
 
   render() {
     return (
-      <h1>This is the Project component.</h1>
-      <p>The project title is {this.state.project.title}</p>
+      <section id="project">
+        <div className="close-project">
+          <Link to="/">[x] Close</Link>
+        </div>
+        <section id="project-details">
+          <p>{this.state.project.title}</p>
+          <li>{
+              this.state.project.info.map( (info,index) =>
+              <div className="project-section" key={index}>
+                <img className="project-image" src={info.image} alt={info.alt} />
+                <p>{info.body}</p>
+              </div>
+              )
+          }</li>
+        </section>
+      </section>
     );
   }
 }
