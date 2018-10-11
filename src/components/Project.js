@@ -5,8 +5,8 @@ class Project extends Component {
   constructor(props) {
     super(props);
 
-    const project = project.find( project => {
-      return project.slug === this.props.match.params.slug
+    const project = projectData.find( project => {
+      return projectData.slug === this.props.match.params.slug
     });
 
     this.state = { project: project };
@@ -15,8 +15,10 @@ class Project extends Component {
 
   render() {
     return (
-      <h1>This is the Project component.</h1>
-      <p>The project title is {this.state.project.title}</p>
+      <section id="projects">
+        <h1>This is the Project component.</h1>
+        <p>{this.state.project.title}</p>
+      </section>
     );
   }
 }

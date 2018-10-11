@@ -22,7 +22,7 @@ class Landing extends Component {
               )}
             </li>
             <p>{project.intro}</p>
-            <Link to={`project/${project.slug}`} key={index} className="see-more">View Project</Link>
+            <Link to={`/${project.slug}`} key={index} className="see-more">View Project</Link>
           </div>
           )
         }
