@@ -49,7 +49,7 @@ body {
 
 #container {
   max-width: 960px;
-  display: flex;  /*enables flex content for its children*/
+  display: flex;
   margin: auto;
 }
 
@@ -145,4 +145,34 @@ main {
 
 .resume-section-title {
   margin: 0 0 48px 0;
+}
+
+#project {
+  display: flex;
+}
+
+.close-project{
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  float: left;
+  position: fixed;
+  margin-top: 48px;
+}
+
+#project-details {
+  max-width: 960px;
+  margin: 48px auto;
+  padding: 48px;
+  background-color: #efefef;
+  box-shadow: 5px 10px #404040;
+}
+
+.project-image {
+  max-width: 100%;
 }

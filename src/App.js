@@ -13,6 +13,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <section>
+          <Route path="/:slug" component={Project} />
+        </section>
         <div id="container">
           <aside>
             <Nav />
@@ -22,7 +25,6 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/resume" component={Resume} />
             <Route path="/contact" component={Contact} />
-            <Route path="/:slug" component={Project} />
           </main>
         </div>
       </div>
