@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <section>
-          <Route path="/:slug" component={Project} />
+          <Route path="/project/:slug" component={Project} />
         </section>
         <div id="container">
           <aside>
@@ -22,9 +22,9 @@ class App extends Component {
           </aside>
           <main>
             <Route exact path="/" component={Landing} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/contact" component={Contact} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/contact" component={Contact} />
           </main>
         </div>
       </div>
