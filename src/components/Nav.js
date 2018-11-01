@@ -22,7 +22,13 @@ class Nav extends Component {
   render() {
     return(
       <nav>
-        <img className="prof-pic" src='/assets/images/prof-pic.png' alt="profile" />
+        <Link
+          to ='/'
+          className={ this.state.activeIndex===1 ? 'active-link' :'inactive-link' }
+          index={1}
+          onClick = { this.setActive }>
+          Home
+        </Link>
         <Link
           to ='/about'
           className={ this.state.activeIndex===0 ? 'active-link' : 'inactive-link' }
@@ -31,25 +37,18 @@ class Nav extends Component {
           About
         </Link>
         <Link
-          to ='/'
-          className={ this.state.activeIndex===1 ? 'active-link' :'inactive-link' }
-          index={1}
+          to ='/projects'
+          className={ this.state.activeIndex===2 ? 'active-link' : 'inactive-link' }
+          index={2}
           onClick = { this.setActive }>
           Projects
         </Link>
         <Link
           to ='/resume'
-          className={ this.state.activeIndex===2 ? 'active-link' : 'inactive-link' }
-          index={2}
-          onClick = { this.setActive }>
-          Resume
-        </Link>
-        <Link
-          to ='/contact'
           className={ this.state.activeIndex===3 ? 'active-link' : 'inactive-link' }
           index={3}
           onClick = { this.setActive }>
-          Contact
+          Resume
         </Link>
       </nav>
     );

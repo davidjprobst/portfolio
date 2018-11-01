@@ -12,19 +12,7 @@ class Landing extends Component {
     return (
       <section id="projects">
         {
-          this.state.projects.map( (project,index)  =>
-          <div className="project-preview" key={index}>
-            <img className="project-cover-image" src={project.coverImage} alt={project.title} />
-            <h1>{project.title}</h1>
-            <li className="project-skills-list">
-              {project.skills.map( (skill,index) =>
-                <ul className="project-skill" key={index}>{skill}</ul>
-              )}
-            </li>
-            <p>{project.intro}</p>
-            <Link to={`/project/${project.slug}`} key={index} className="see-more">View Project</Link>
-          </div>
-          )
+          <h1>HOME PAGE</h1>
         }
       </section>
     );
