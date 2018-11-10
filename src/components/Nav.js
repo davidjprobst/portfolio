@@ -15,21 +15,30 @@ class Nav extends Component {
   }
 
   setActive(e) {
-    console.log("item clicked");
     const clickedIndex = parseInt(e.target.getAttribute("index"), 10);
     this.setState({ activeIndex: clickedIndex });
+
     const menu = this.refs.menu;
     menu.style.display = "none";
+
+    const hamburger = this.refs.hamburger;
+    hamburger.style.display = "block";
   }
 
   openMenu() {
     const menu = this.refs.menu;
     menu.style.display = "block";
+
+    const hamburger = this.refs.hamburger;
+    hamburger.style.display = "none";
   }
 
   render() {
     return(
       <div>
+        <div id="hamburger" ref="hamburger" onClick= { () => this.openMenu() }>
+          <img id="menu-btn" src="../../assets/icons/menu.png" alt="menu"></img>
+        </div>
         <section ref="menu" id="menu">
           <Link
             to ='/'
@@ -60,10 +69,7 @@ class Nav extends Component {
             Resume
           </Link>
         </section>
-        <div id="hamburger" onClick= { () => this.openMenu() }>
-          <img id="menu-btn" src="../../assets/icons/menu.png" alt="menu"></img>
-        </div>
-        <nav>
+        <nav id='default-nav'>
           <Link
             to ='/'
             className={ this.state.activeIndex===1 ? 'active-link' :'inactive-link' }

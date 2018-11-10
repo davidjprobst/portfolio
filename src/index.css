@@ -4,7 +4,6 @@ html {
   height: 100%;
   list-style: none;
   color: #101010;
-  overflow: hidden;
 }
 
 body {
@@ -14,7 +13,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  overflow: hidden;
 }
 
 #container {
@@ -22,10 +20,14 @@ body {
   margin: auto;
 }
 
+.bold {
+  font-weight: 800;
+}
+
 a {
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
-  color: #101010;
+  color: #4F73FF;
 }
 
 p {
@@ -34,20 +36,33 @@ p {
   margin: 0;
   font-weight: 500;
   letter-spacing: -.02em;
+  max-width: 100%;
 }
 
 h1 {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0;
+  max-width: 800px;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 41px;
   font-weight: 700;
   margin: 0;
+  max-width: 800px;
 }
 
 h3 {
   font-family: 'Source Code Pro', monospace;
-  font-size: 34px;
+  font-size: 28px;
   margin: 0;
   font-weight: 400;
+  max-width: 800px;
+  line-height: 40px;
+  margin-top: 40px;
 }
 
 h5 {
@@ -66,6 +81,7 @@ aside {
   margin: 0;
   position: absolute;
   overflow: scroll;
+  z-index: 100;
 }
 
 nav {
@@ -91,13 +107,18 @@ nav > a {
   display: none;
 }
 
+#menu-btn {
+  display: none;
+}
+
 #menu {
   display: none;
-  width: 100vw;
+  width: 100%;
   background-color: #101010;
   height: 100vh;
   font-size: 40px;
   padding-top: 80px;
+  position: fixed;
 }
 
 #menu > a {
@@ -118,44 +139,48 @@ nav > a {
 
 main {
   order: 2;
-  overflow-y: auto;
-  width: 100%;
   text-align: left;
-  margin-left: 175px;
-  position: absolute;
+  padding: 48px 48px 120px 175px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: auto;
+  width: 100%;
+}
+
+.about-link {
+  font-size: 28px;
+  margin-top: 80px;
+  line-height: 80px;
+}
+
+#recent-projects {
+  margin: 144px 0 16px 0;
+  max-width: 640px;
+  width: 50%;
+}
+
+.project-skills-list {
+  margin: 16px 0 16px 0;
+}
+
+.project-skill {
+  display: inline-block;
+  padding: 2px 4px;
+  margin: 0 8px 0 0;
+  background-color: #EAEAEA;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
 }
 
 
 /********** X-SMALL WINDOW **********/
 
 @media only screen and (max-width: 600px) {
-
-  nav {
-    display: none;
-  }
-
-  #hamburger {
-    display: block;
-    background-color: #101010;
-    height: 47px;
-    width: 48px;
-    padding: auto;
-  }
-
-  #menu-btn {
-    width: 24px;
-    height: 19px;
-    margin: 14px 12px;
-  }
-
-  main {
-    margin: 58px 16px 120px 16px;
-  }
 
 }
 
@@ -166,25 +191,9 @@ main {
 
 @media only screen and (max-width: 900px) {
 
-  nav {
-    display: none;
-  }
-
-  #hamburger {
-    display: block;
-    background-color: #101010;
-    height: 47px;
-    width: 48px;
-    padding: auto;
-  }
-  #menu-btn {
-    width: 24px;
-    height: 19px;
-    margin: 14px 12px;
-  }
-
-  main {
-    margin: 58px 16px 120px 16px;
+  #recent-projects {
+    width: 100%;
+    max-width: 100%;
   }
 
 }
@@ -196,7 +205,7 @@ main {
 
 @media only screen and (max-width: 1100px) {
 
-  nav {
+  #default-nav {
     display: none;
   }
 
@@ -208,14 +217,21 @@ main {
     padding: auto;
     position: fixed;
   }
+
   #menu-btn {
+    display: block;
     width: 24px;
     height: 19px;
     margin: 14px 12px;
   }
 
   main {
-    margin: 58px 16px 120px 16px;
+    padding: 58px 16px 120px 16px;
+  }
+
+  aside {
+    width: 100%;
+    height: 100%;
   }
 
 }
@@ -246,23 +262,6 @@ main {
   margin: 0 0 8px 0;
   height: 375px;
   width: 100%;
-}
-
-.project-skills-list {
-  margin: 0 0 16px 0;
-}
-
-.project-skill {
-  display: inline-block;
-  padding: 2px 4px;
-  margin: 0 8px 0 0;
-  background-color: #EAEAEA;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 2px;
-  font-size: 14px;
 }
 
 .resume-items {
