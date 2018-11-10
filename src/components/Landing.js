@@ -20,12 +20,19 @@ class Landing extends Component {
             <Link to='/about' class='about-link'>Read full bio ></Link>
           </div>
           <div id='recent-projects'>
-            <h2>Style test</h2>
-            <li className='project-skills-list'>
-              <ul className='project-skill'>This is a skill</ul>
-              <ul className='project-skill'>This is a skill</ul>
-            </li>
-            <p>This is the body text of the project and this is how it goes man. Heres the deal man.</p>
+            <div className='project'>
+              <div className='project-description'>
+                <h2>Style test</h2>
+                <li className='project-skills-list'>
+                  <ul className='project-skill'>This is a skill</ul>
+                  <ul className='project-skill'>This is a skill</ul>
+                </li>
+                <p>This is the body text of the project and this is how it goes man. Heres the deal man.</p>
+              </div>
+              <div className='project-cover-image'>
+                <img alt="temporary alt" />
+              </div>
+            </div>
           </div>
         </div>
         }

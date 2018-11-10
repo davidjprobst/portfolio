@@ -156,8 +156,17 @@ main {
 
 #recent-projects {
   margin: 144px 0 16px 0;
+  width: 100%;
+}
+
+.project {
+  display: flex;
+}
+
+.project-description {
   max-width: 640px;
   width: 50%;
+  order: 1;
 }
 
 .project-skills-list {
@@ -177,10 +186,23 @@ main {
   font-size: 14px;
 }
 
+.project-cover-image {
+  order: 2;
+  overflow: hidden;
+  margin: 0 0 8px 0;
+  height: 320px;
+  width: 50%;
+  background-color: #efefef;
+}
 
 /********** X-SMALL WINDOW **********/
 
 @media only screen and (max-width: 600px) {
+
+  .project-description {
+    max-width: 100%;
+    width: 100%;
+  }
 
 }
 
@@ -191,10 +213,6 @@ main {
 
 @media only screen and (max-width: 900px) {
 
-  #recent-projects {
-    width: 100%;
-    max-width: 100%;
-  }
 
 }
 
@@ -251,17 +269,6 @@ main {
   max-width: 100%;
   text-align: left;
   margin: 0 0 48px 0;
-}
-
-#projects h1 {
-  margin: 0 0 16px 0;
-}
-
-.project-cover-image {
-  overflow: hidden;
-  margin: 0 0 8px 0;
-  height: 375px;
-  width: 100%;
 }
 
 .resume-items {
