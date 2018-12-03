@@ -11,12 +11,15 @@ class Landing extends Component {
   render() {
     return (
       <section id="home">
+        <div id='home-image'>
+          <img src='/assets/images/home-image.jpeg'></img>
+        </div>
         {
         <div className='content'>
           <div id='intro' className="fixed-width">
-            <h1>David Probst is a digital product designer currently working in Chicago, Illinois.</h1>
-            <h3>Working as the connective element between product vision and product development, he has had the opportunity to work with a range of companies - from Fortune 500 corporations to early stage start ups.</h3>
-            <h3>Today, David is working with DAIS Technology and a Bay Area start up to create modern designs that excite users, and accelerate product development.</h3>
+            <h1><span className='white-text-background'>David Probst is a digital product designer currently working in Chicago, Illinois.</span></h1>
+            <h3><span className='white-text-background'>Working as the connective element between product vision and product development, he has had the opportunity to work with a range of companies - from Fortune 500 corporations to early stage start ups.</span></h3>
+            <h3><span className='white-text-background'>Today, David is working with DAIS Technology and a Bay Area start up to create modern designs that excite users, and accelerate product development.</span></h3>
             <Link to='/about' class='about-link'>Read full bio ></Link>
           </div>
 
