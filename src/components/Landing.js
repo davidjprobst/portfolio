@@ -35,6 +35,9 @@ class Landing extends Component {
                     )}
                   </li>
                   <p>{project.intro}</p>
+                  <div className='project-link'>
+                    <Link to={`/projects/${project.slug}`} key={index}>See full project ></Link>
+                  </div>
                 </div>
                 <div className='project-cover-image'>
                   <img src = {project.coverImage} alt={project.coverImageAlt} />

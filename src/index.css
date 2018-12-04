@@ -32,6 +32,11 @@ a {
   font-family: 'Source Code Pro', monospace;
   text-decoration: none;
   color: #4F73FF;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -192,6 +197,11 @@ main {
   width: 50%;
   order: 1;
   margin: 0 24px 0 0;
+}
+
+.project-link {
+  margin: 16px 0 0 0;
+  font-size: 18px;
 }
 
 .project-skills-list {
