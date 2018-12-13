@@ -285,8 +285,8 @@ main {
   margin: 0 0 48px 0;
 }
 
-#project {
-  display: flex;
+.project {
+  display: block;
 }
 
 .close-project{

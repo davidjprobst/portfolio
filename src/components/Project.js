@@ -16,11 +16,12 @@ class Project extends Component {
 
   render() {
     return (
-      <section id="project">
+      <section class="project">
         <div className="close-project">
           <Link to="/">[x] Close</Link>
         </div>
         <section id="project-details">
+          <p>This is the porject title</p>
           <p>{this.state.project.title}</p>
           <li>{
               this.state.project.info.map( (info,index) =>
