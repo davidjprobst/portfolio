@@ -20,7 +20,7 @@ class Landing extends Component {
             </div>
             <h3 className='xs-text-padding'><span className='white-text-background'>Working as the connective element between product vision and product development, he has had the opportunity to work with a range of companies - from Fortune 500 corporations to early stage start ups.</span></h3>
             <h3 className='xs-text-padding'><span className='white-text-background'>Today, David is working with DAIS Technology and a Bay Area start up to create modern designs that excite users, and accelerate product development.</span></h3>
-            <Link to='/about' class='about-link xs-text-padding'>Read full bio ></Link>
+            {/*} <Link to='/about' class='about-link xs-text-padding'>Read full bio ></Link> */}
           </div>
 
           <div id='recent-projects'>
@@ -47,6 +47,9 @@ class Landing extends Component {
           </div>
         </div>
         }
+        <a id="linkedin" href="//www.linkedin.com/in/davidjprobst/" target="_blank">
+          <p>Connect on LinkedIn</p>
+        </a>
       </section>
     );
   }
