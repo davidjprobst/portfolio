@@ -18,16 +18,22 @@ class Project extends Component {
     return (
       <section class="project">
         <div className="close-project">
-          <Link to="/">[x] Close</Link>
+          <Link to="/">Close [X]</Link>
         </div>
         <section id="project-details">
-          <p>This is the porject title</p>
-          <p>{this.state.project.title}</p>
+          <img className="project-image" src = {this.state.project.coverImage} alt={this.state.project.coverImageAlt} />
+          <h1 className="project-title">{this.state.project.title}</h1>
+          <li className='project-skills-list'>
+            {this.state.project.skills.map( (skill,index) =>
+              <ul className='project-skill' key={index}>{skill}</ul>
+            )}
+          </li>
+          <p className="project-intro">{this.state.project.intro}</p>
           <li>{
               this.state.project.info.map( (info,index) =>
               <div className="project-section" key={index}>
                 <img className="project-image" src={info.image} alt={info.alt} />
-                <p>{info.body}</p>
+                <p className="project-blurb">{info.body}</p>
               </div>
               )
           }</li>

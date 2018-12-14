@@ -37,7 +37,7 @@ class Nav extends Component {
     return(
       <div>
         <div id="hamburger" ref="hamburger" onClick= { () => this.openMenu() }>
-          <img id="menu-btn" src="../../assets/icons/menu.png" alt="menu"></img>
+          <img className="menu-btn" src="../../assets/icons/menu.png" alt="menu"></img>
         </div>
         <section ref="menu" id="menu">
           <Link

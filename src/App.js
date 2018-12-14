@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <section>
-          <Route path="/project/:slug" component={Project} />
+          <Route path="/projects/:slug" component={Project} />
         </section>
         <div id="container">
           <aside>
