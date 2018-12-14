@@ -12,22 +12,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <section>
-          <Route path="/projects/:slug" component={Project} />
-        </section>
-        <div id="container">
-          <aside>
-            <Nav />
-          </aside>
-          <main>
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/contact" component={Contact} />
-          </main>
+        <div className="App">
+          <section>
+            <Route path="/projects/:slug" component={Project} />
+          </section>
+          <div id="container">
+            <aside>
+              <Nav />
+            </aside>
+            <main>
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/resume" component={Resume} />
+              <Route exact path="/contact" component={Contact} />
+            </main>
+          </div>
         </div>
-      </div>
     );
   }
 }
