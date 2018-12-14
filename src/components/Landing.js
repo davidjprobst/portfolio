@@ -14,7 +14,7 @@ class Landing extends Component {
         {
         <div className='content'>
           <div id='intro' className="fixed-width">
-            <h1 className='title' className='xs-text-padding'><span className='white-text-background'>David Probst is a digital product designer from Chicago.</span></h1>
+            <h1 className='xs-text-padding title'><span className='white-text-background'>David Probst is a digital product designer from Chicago.</span></h1>
             <div id='home-image'>
               <img src='/assets/images/home-image.jpeg'></img>
             </div>
