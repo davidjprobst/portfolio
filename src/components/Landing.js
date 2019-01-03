@@ -18,8 +18,8 @@ class Landing extends Component {
             <div id='home-image'>
               <img src='/assets/images/home-image.jpeg'></img>
             </div>
-            <h3 className='xs-text-padding'><span className='white-text-background'>Working as the connective element between product vision and product development, he has had the opportunity to work with a range of companies - from Fortune 500 corporations to early stage start ups.</span></h3>
-            <h3 className='xs-text-padding'><span className='white-text-background'>David has experience designing responsive web products, iOS apps, conversational interfaces, and design systems. He has recently worked with two early stage startps to create designs that excite users and accelerate product development.</span></h3>
+            <h3 className='xs-text-padding'><span className='white-text-background'>David has had the opportunity to work with a range of companies - from Fortune 500 corporations to early stage start ups - helping to take their product vision to development.</span></h3>
+            <h3 className='xs-text-padding'><span className='white-text-background'>He has experience designing responsive web products, iOS apps, conversational interfaces, and design systems.</span></h3>
             {/*} <Link to='/about' class='about-link xs-text-padding'>Read full bio ></Link> */}
           </div>
 

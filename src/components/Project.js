@@ -25,19 +25,17 @@ class Project extends Component {
           <Link to="/"><img src="../../assets/icons/close.png" alt="close"></img></Link>
         </div>
         <section id="project-details">
-          <img className="project-image" src = {this.state.project.coverImage} alt={this.state.project.coverImageAlt} />
           <h1 className="project-title xs-text-padding">{this.state.project.title}</h1>
           <li className='project-skills-list xs-text-padding'>
             {this.state.project.skills.map( (skill,index) =>
               <ul className='project-skill xs-text-padding' key={index}>{skill}</ul>
             )}
           </li>
-          <p className="project-intro xs-text-padding">{this.state.project.intro}</p>
           <li>{
               this.state.project.info.map( (info,index) =>
               <div className="project-section" key={index}>
-                <img className="project-image" src={info.image} alt={info.alt} />
                 <p className="project-blurb xs-text-padding">{info.body}</p>
+                <img className="project-image" src={info.image} alt={info.alt} />
               </div>
               )
           }</li>
