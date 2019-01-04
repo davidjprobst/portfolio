@@ -54,6 +54,9 @@ class Landing extends Component {
           <a className="icon-link" href="//dribbble.com/_davidprobst" target="_blank">
             <img src="../../assets/icons/dribbble.png" alt="Dribbble Icon" />
           </a>
+          <a className="icon-link" href="//github.com/davidjprobst/" target="_blank">
+            <img src="../../assets/icons/github.png" alt="GitHub Icon" />
+          </a>
         </div>
       </section>
     );
