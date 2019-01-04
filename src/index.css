@@ -250,13 +250,28 @@ main {
   flex-shirnk: 0;
 }
 
-#linkedin {
-  background-color: #3454D5;
-  color: #ffffff;
-  padding: 8px 16px 6px 16px;
+#profile-links {
   position: fixed;
   bottom: 0;
   right: 48px;
+  height: 48px;
+  display: block;
+}
+#profile-links img {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+}
+
+.icon-link {
+  background-color: #101010;
+  color: #ffffff;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.icon-link:hover img {
+  opacity: .8;
 }
 
 
@@ -404,7 +419,7 @@ main {
     margin: 0 0 96px 0;
   }
 
-  #linkedin {
+  #profile-links {
     right: 0;
   }
 

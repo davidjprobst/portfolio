@@ -3,23 +3,25 @@ export default [{
   coverImageAlt: 'Warranty Tracker Cover Image',
   title: 'Warranty Tracker',
   skills: ['UX Architecture', 'UI & UX Design', 'Web Design'],
-  intro: 'Allows users to create, find, track, and fulfill warranty claims across multiple organizations.',
+  intro: 'Create, view, track, and fulfill warranty claims across multiple organizations.',
   slug: 'warranty-tracker',
   info: [
-      { image: '/assets/images/warranty-1.jpg', body: 'This client had been using an outdated warranty tracking system for several years and found that it was not meeting their needs. They wanted a custom design that included all of the features of the old system but with improved usability and modern interface.', alt:'Warranties Table Designs' },
-      { image: '/assets/images/warranty-2.jpg', body: 'The UX Architecture of the product was reorganized based on insights gathered from users of the old product. Information about warranties and claims are shown with the minimum amount of information needed for identification. Users can navigate into warranties and claims to view detailed information without cognitive overload from a cluttered interface.', alt:'Claim Details Design' },
-      { image: '/assets/images/warranty-3.jpg', body: '**the design of the product has been white labeled to protect the privacy of the client', alt:'Claim Creation Flow' }
+      { image: '/assets/images/warranty-1.jpg', body: 'This client had been using an outdated warranty tracking system for several years and was ready to transition to a custom product. The new design was to include all of the features of the old system while improving usability and modernizing the UI.', alt:'Warranties Table Designs' },
+      { image: '/assets/images/warranty-2.jpg', body: 'Using insights gathered from users, the UX architecture was reorganized with the goal of making information easier to digest and comprehend. Each page displays only the amount of information needed for the user to complete the job to be done. Detailed information is available under additional menus if necessary but are largely removed from the primary interface in order to decrease the the user’s cognitive load.', alt:'Claim Details Design' },
+      { image: '/assets/images/warranty-3.jpg', body: 'Ease of understanding was also prioritized in data entry flows. When creating a new claim in the system the user navigates through a wizard. Data entry is organized into groups of related information. Although this takes more clicks, each step is simplified for the user making tedious data entry feel smooth.', alt:'Claim Creation Flow' },
+      { image: '', body: '**In order to protect the privacy of the client, the designs shown have been altered from their original form.**', alt:'' }
   ]
 }, {
-  coverImage: '/assets/images/test-image.jpg',
-  coverImageAlt: 'This is the alt text',
+  coverImage: '/assets/images/bubble-cover.jpg',
+  coverImageAlt: 'Bubble-O-Meter Cover Image',
   title: 'Bubble-O-Meter',
-  skills: ['UX Architecture', 'UI & UX Design', 'Project Management', "HTML & CSS"],
-  intro: 'E-commerce website for a small business in Ohio selling advanced sceintific measurement tools.',
+  skills: ['UX Architecture', 'Responsive Web Design', 'Project Management', 'HTML & CSS'],
+  intro: 'An e-commerce website helping a small business in Ohio market and sell advanced sceintific measurement tools.',
   slug: 'bubble-o-meter',
   info: [
-      { image: '/assets/images/test-image.jpg', body: 'This is the first body description', alt:'Image one' },
-      { image: '/assets/images/test-image.jpg', body: 'This is the second body description', alt:'Image one' },
-      { image: '/assets/images/test-image.jpg', body: 'This is the third body description', alt:'Image one' }
+      { image: '/assets/images/bubble-1.jpg', body: 'Bubble-O-Meter wanted a complete redesign of their website that had not been updated for over 10 years. The new design is the result of close collaboration with the client.', alt:'Product Page Wireframe' },
+      { image: '/assets/images/bubble-2.jpg', body: 'The site utilizes familiar e-commerce patterns to create a user-friendly shopping experience that customers are accustomed to.', alt:'Store Page Design' },
+      { image: '/assets/images/bubble-3.jpg', body: 'Fully custom designs are applied to the flow rate calculator to add value to Bubble-O-Meters flagship product. The calculator calculates flow rates in multiple units based on measurements taken by the user. Saving the user from having to do complex calculations on their own.', alt:'Calculator Page Design' },
+      { image: '/assets/images/bubble-4.jpg', body: 'As part of this redesign, the client wanted to use modern e-commerce tools and practices to easily expand product offerings, track inventory and sales, and update content. The new website is built on Wordpress and utilizes Stripe and shipping plugins to automate much of the administrative work.', alt:'Misc Bubble-O-Meter Designs' }
   ]
 }];

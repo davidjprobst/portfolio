@@ -47,9 +47,14 @@ class Landing extends Component {
           </div>
         </div>
         }
-        <a id="linkedin" href="//www.linkedin.com/in/davidjprobst/" target="_blank">
-          <p>Connect on LinkedIn</p>
-        </a>
+        <div id="profile-links">
+          <a className="icon-link" href="//www.linkedin.com/in/davidjprobst/" target="_blank">
+            <img src="../../assets/icons/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+          <a className="icon-link" href="//dribbble.com/_davidprobst" target="_blank">
+            <img src="../../assets/icons/dribbble.png" alt="Dribbble Icon" />
+          </a>
+        </div>
       </section>
     );
   }
